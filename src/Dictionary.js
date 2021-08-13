@@ -1,11 +1,17 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 export default function Dictionary() {
   const [keyword, setKeyword] = useState("");
 
+  function searchResponse(response) {
+    console.log(response);
+  }
+
   function wordSearch(event) {
     event.preventDefault();
-    alert(`Searching for ${keyword}!`);
+    const apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+    axios.get(apiUrl).then(searchResponse);
   }
 
   function handleKeyword(event) {
@@ -17,7 +23,7 @@ export default function Dictionary() {
       <form onSubmit={wordSearch}>
         <input
           type="search"
-          autoFocus="true"
+          autoFocus={true}
           placeholder="Enter a word to search..."
           onChange={handleKeyword}
         />
