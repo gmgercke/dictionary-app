@@ -10,7 +10,11 @@ export default function App() {
         <Dictionary />
       </div>
       <footer>
-        <a href="https://github.com/gmgercke/dictionary-app">
+        <a
+          href="https://github.com/gmgercke/dictionary-app"
+          target="_blank"
+          rel="noreferrer"
+        >
           Open-source code
         </a>{" "}
         by Gesa-Maria Gercke
