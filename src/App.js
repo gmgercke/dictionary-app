@@ -9,6 +9,12 @@ export default function App() {
         <h1>Dictionary</h1>
         <Dictionary />
       </div>
+      <footer>
+        <a href="https://github.com/gmgercke/dictionary-app">
+          Open-source code
+        </a>{" "}
+        by Gesa-Maria Gercke
+      </footer>
     </div>
   );
 }
