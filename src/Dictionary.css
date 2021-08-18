@@ -1,3 +1,11 @@
+section {
+  background-color: white;
+  padding: 5px 15px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 7px 7px 0px rgba(28, 68, 24, 0.2);
+}
+
 h1 {
   margin: 20px auto;
   text-align: center;
@@ -6,16 +14,28 @@ h1 {
 
 form {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 input {
   border-radius: 5px;
-  padding: 0 10px 0 10px;
-  width: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1px;
+  width: 80%;
+  color: rgb(64, 121, 104);
 }
 
 button {
+  font-weight: bold;
+  color: rgb(64, 121, 104);
+  background-color: white;
   margin-left: 10px;
   border-radius: 5px;
+  border: 1px solid rgba(64, 121, 104);
+  transition: all 200ms ease-in-out;
+}
+
+button:hover {
+  background-color: rgb(64, 121, 104, 0.4);
+  color: white;
 }

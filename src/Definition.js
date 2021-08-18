@@ -10,12 +10,12 @@ export default function Definition(props) {
         if (definition.example) {
           return (
             <div key={index}>
-              <p>
+              <span>
                 {definition.definition}
                 <br />
-                <em>e.g. {definition.example}</em>
+                <span className="example">e.g. {definition.example}</span>
                 <Synonyms synonyms={definition.synonyms} />
-              </p>
+              </span>
             </div>
           );
         } else {
